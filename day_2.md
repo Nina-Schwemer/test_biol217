@@ -40,7 +40,7 @@ do
     fastp -i ${i} -I ${second} -R_report -o ../clean_folder/"${i}" -0 ../clean_folder/"${second}" -t 6 -q 20
 done
 ```
-And for àssembly` you use:
+And for `assembly` you use:
 ```
 megahit -1 sample1_R1.fastq.gz -1 sample2_R2.fastq.gz -2 sample1_R1.fastq.gz -2 sample2_R2.fastq.gz --min-contig-len 1000 --presets meta-large -m 0.85 -o ./3_coassembly/ -t 20
 ```
